@@ -1,3 +1,11 @@
+# README
+
+This repository holds the source code for assignment 2 in the course Teknik för Sociala Medier in the spring of 2020, created by Dardan Dauti.
+
+
+All text below is auto-generated.
+*******************************************************************************************************************************
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
