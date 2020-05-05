@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Oauth 2.0 app</title>
+    <style>
+        body{
+            font-family: arial;
+            margin: 0;
+            text-align: center;
+            color: #454545;
+        }
+        nav{
+            background: #FA435A;
+            padding: 20px 10px;
+        }
+        nav ul{
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        nav li{
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 10px 0 0;
+        }
+        nav a{
+            color: #FFFFFF;
+            font-size: 18px;
+            background: #CA3548;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        main, header{
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 0 10px;
+            color: #454545;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 100px;
+        }
+        .google-btn{
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 10px;
+                background: rgb(219, 85, 73);
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <% if (!user) { %>
+                <li><a href="/auth/login">Log in</a></li>
+            <% } else { %>
+                <li><a href="/auth/logout">Log out</a></li>
+            <% } %>
+        </ul>
+    </nav>
+    <header>
+        <h1>Log in using a social media:</h1>
+    </header>
+    <main>
+        <a class="google-btn" href="/auth/google">Google</a>
+    </main>
+</body>
+</html>
